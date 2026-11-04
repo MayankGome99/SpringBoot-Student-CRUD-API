@@ -3,7 +3,7 @@
 A 3-layer backend REST API built with **Java** and **Spring Boot** that performs full CRUD operations on student records backed by a persistent **H2 SQL Database** and **Swagger UI**.
 
 ## 🚀 Tech Stack
-* **Java 26 & Spring Boot 4**
+* **Java 21 & Spring Boot 3.x**
 * **Spring Web** (RESTful API Architecture: Controller → Service → Repository)
 * **Spring Data JPA / Hibernate** (ORM & SQL Query Generation)
 * **H2 Database** (File-based Persistent SQL Storage)
