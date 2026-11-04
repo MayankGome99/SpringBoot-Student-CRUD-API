@@ -45,4 +45,8 @@ public class StudentService {
         }
         return false;
     }
+    public long getStudentCount() {
+        return repo.count();
+    }
+
 }

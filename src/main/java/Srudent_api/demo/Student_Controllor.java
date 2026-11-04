@@ -1,6 +1,7 @@
 package Srudent_api.demo;
 import org.hibernate.annotations.processing.Find;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -49,5 +50,12 @@ return service.findStudentById(id);
 
 
 }
+
+    @GetMapping("/total-count")
+    public ResponseEntity<Long> getTotalCount(){
+        // Use 'service' because that's what you named the variable above
+        long count = service.getStudentCount();
+        return ResponseEntity.ok(count); // Remove the extra ()
+    }
 
 }
