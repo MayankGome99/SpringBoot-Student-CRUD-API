@@ -19,6 +19,13 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+
 
 		<!-- 1. Spring Data JPA: Translates Java objects into SQL tables -->
 		<dependency>
@@ -38,6 +45,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
+
 
 
 
